@@ -3,10 +3,10 @@ name: Minestrator-Restart
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'   # 北京时间 09:00
-    - cron: '0 5 * * *'   # 北京时间 13:00
-    - cron: '0 9 * * *'   # 北京时间 17:00
-    - cron: '0 13 * * *'  # 北京时间 21:00
+    - cron: '0 0 * * *'   # 北京 08:00 (UTC 00:00)
+    - cron: '10 4 * * *'  # 北京 12:10 (UTC 04:10)
+    - cron: '20 8 * * *'  # 北京 16:20 (UTC 08:20)
+    - cron: '30 12 * * *' # 北京 20:30 (UTC 12:30)
 
 jobs:
   run_minestrator_restart:
